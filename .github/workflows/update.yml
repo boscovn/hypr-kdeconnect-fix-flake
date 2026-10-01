@@ -1,0 +1,28 @@
+name: Update
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      # Bumps both the upstream source and nixpkgs.
+      - run: nix flake update
+      # Pull requests opened with GITHUB_TOKEN don't trigger other workflows,
+      # so check here; a failing update doesn't open a PR.
+      - run: nix flake check -L
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: update
+          title: Update flake.lock
+          commit-message: Update flake.lock
+          body: Automated by the Update workflow.
