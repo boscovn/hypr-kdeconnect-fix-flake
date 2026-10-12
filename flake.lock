@@ -3,11 +3,11 @@
     "hypr-kdeconnect-fix-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1790301701,
-        "narHash": "sha256-fswdn3iq1iCXALLWC/p5EgRYbHIMgNHWEhxEtbHtCFY=",
+        "lastModified": 1791238779,
+        "narHash": "sha256-vhb+UMDJXvw8PAIzH1bsLk4JmXzRIPiFTRQxZX3wPZM=",
         "owner": "gfhdhytghd",
         "repo": "hypr-kdeconnect-fix",
-        "rev": "362b904235c1b1d679eef73cbd5ad08d313d8954",
+        "rev": "5fc959475177197f0aa953fcc42a3742e6648671",
         "type": "github"
       },
       "original": {
@@ -18,11 +18,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1791048980,
-        "narHash": "sha256-KgItSKML8Xvte0B7/uGnBDsYzSnnKHcOaiUbgWBXLXw=",
+        "lastModified": 1791594108,
+        "narHash": "sha256-XK4KceonkwD8LuMAt/vNrz982mXJM5jeHAxMwsUXXAQ=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a7868a727837f3c09cee2ce0ca671c76b1589fed",
+        "rev": "6510408d147d8c5e6d76043e899e9251756f6a75",
         "type": "github"
       },
       "original": {
